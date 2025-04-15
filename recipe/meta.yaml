@@ -1,13 +1,13 @@
 {% set name = "recordclass" %}
-{% set version = "0.22.0.3" %}
+{% set version = "0.23.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/recordclass-{{ version }}.tar.gz
-  sha256: c2c49556d88d45b090d4440c4672a6dffc912c10386fef9b100d2f657ee3ee64
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/recordclass-{{ version }}.tar.gz
+  sha256: cd6391030709d1cb42c6a901aa1053411ae5baf8762a5eb763e220be2489b3c9
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
